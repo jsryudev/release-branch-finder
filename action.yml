@@ -1,0 +1,17 @@
+name: 'Release Branch Finder'
+description: 'Release Branch Finder'
+author: 'jsryudev'
+inputs:
+  repo-token:
+    description: 'The GITHUB_TOKEN secret'
+  release-branch-prefix:
+    description: 'The target release branch prefix'
+    default: release
+  
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'search'
+  color: 'gray-dark'
